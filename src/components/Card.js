@@ -46,14 +46,35 @@ class Card extends Component {
             alt="..."
           />
           <div className="card-body">
-            <h5 className="card-title text-justify">
-              {this.state.houses[0].name}
-            </h5>
+            <div className="row">
+              <h5 className="card-title col-xs-6 ">
+                {this.state.houses[0].name}
+              </h5>
+              <h5
+                className=" "
+                style={{
+                  backgroundColor: 'rgba(0, 0, 0, 0.2)',
+                  color: '#fff',
+                  lineHeight: '20px',
+                  fontSize: '14px',
+                  position: 'absolute',
+                  marginRight: '15px',
+                  right: '0',
+                  display: 'block',
+                  padding: '0 10px'
+                }}
+              >
+                {this.state.houses[0].id}
+              </h5>
+            </div>
             <p className="card-text text-justify">{this.state.houses[0].adr}</p>
             <div className="text-left">
               <i className="fa fa-bed mr-1" />
               <span className="mr-3">{this.state.houses[0].bed}</span>
-              <i className="fa fa-bath mr-1" />
+              <i
+                className="fa fa-bath
+               mr-1"
+              />
               <span className="mr-3">{this.state.houses[0].shower}</span>
               <i className="fa fa-car mr-1" />
               <span className="mr-3">{this.state.houses[0].cars}</span>
